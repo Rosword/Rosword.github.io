@@ -1,12 +1,26 @@
 import { Menu, X } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useState, type MouseEvent } from "react";
 import { navItems } from "../data/portfolio";
 import { ThemeToggle } from "./ThemeToggle";
 
-export function Navbar() {
+type Props = {
+  currentPath: string;
+  onNavigate: (href: string) => void;
+};
+
+export function Navbar({ currentPath, onNavigate }: Props) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const currentPath = window.location.pathname.replace(/\/+$/, "") || "/";
+  const normalizedPath = currentPath.replace(/\/+$/, "") || "/";
+
+  const handleNavigation = (event: MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
+      return;
+    }
+    event.preventDefault();
+    setMenuOpen(false);
+    onNavigate(href);
+  };
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -22,8 +36,9 @@ export function Navbar() {
           {navItems.map((item) => (
             <a
               key={item.href}
-              className={currentPath === (item.href.replace(/\/+$/, "") || "/") ? "active" : ""}
+              className={normalizedPath === (item.href.replace(/\/+$/, "") || "/") ? "active" : ""}
               href={item.href}
+              onClick={(event) => handleNavigation(event, item.href)}
             >
               {item.label}
             </a>
@@ -47,9 +62,9 @@ export function Navbar() {
           {navItems.map((item) => (
             <a
               key={item.href}
-              className={currentPath === (item.href.replace(/\/+$/, "") || "/") ? "active" : ""}
+              className={normalizedPath === (item.href.replace(/\/+$/, "") || "/") ? "active" : ""}
               href={item.href}
-              onClick={() => setMenuOpen(false)}
+              onClick={(event) => handleNavigation(event, item.href)}
             >
               {item.label}
             </a>

@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
 import { ResearchExperience } from "./components/ResearchExperience";
@@ -24,12 +25,31 @@ function pageContent(pathname: string) {
 }
 
 export default function App() {
+  const [pathname, setPathname] = useState(window.location.pathname);
+
+  useEffect(() => {
+    const handlePopState = () => setPathname(window.location.pathname);
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, []);
+
+  const navigate = (href: string) => {
+    const currentPath = window.location.pathname.replace(/\/+$/, "") || "/";
+    const nextPath = href.replace(/\/+$/, "") || "/";
+
+    if (currentPath !== nextPath) {
+      window.history.pushState({}, "", href);
+      setPathname(window.location.pathname);
+    }
+    window.scrollTo({ top: 0, behavior: "auto" });
+  };
+
   return (
     <div className="site-shell">
       <a className="skip-link" href="#main-content">Skip to main content</a>
-      <Navbar />
+      <Navbar currentPath={pathname} onNavigate={navigate} />
       <main id="main-content">
-        {pageContent(window.location.pathname)}
+        {pageContent(pathname)}
       </main>
       <Footer />
     </div>
