@@ -225,27 +225,27 @@ button { font: inherit; }
   position: absolute;
   top: -14px;
   right: -10px;
-  width: 154px;
-  height: 154px;
+  width: 140px;
+  height: 140px;
   object-fit: contain;
   opacity: 0.16;
   pointer-events: none;
 }
 
 .experience-logo--uci {
-  width: 160px;
-  height: 160px;
+  width: 144px;
+  height: 144px;
 }
 
 .experience-logo--ucsc {
-  width: 154px;
-  height: 154px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
 }
 
 .experience-logo--swjtu {
-  width: 158px;
-  height: 158px;
+  width: 142px;
+  height: 142px;
   opacity: 0.13;
 }
 
@@ -314,8 +314,8 @@ button { font: inherit; }
 }
 
 .education-card .experience-logo--swjtu {
-  width: 158px;
-  height: 158px;
+  width: 142px;
+  height: 142px;
   opacity: 0.13;
 }
 
@@ -365,11 +365,11 @@ button { font: inherit; }
   .section { padding: 62px 0; }
   .hero { padding: 112px 0 60px; }
   .experience-card { min-height: 0; padding: 28px 24px; }
-  .experience-logo { top: -8px; right: -8px; width: 118px; height: 118px; }
+  .experience-logo { top: -8px; right: -8px; width: 108px; height: 108px; }
   .experience-logo--uci,
   .experience-logo--ucsc,
   .experience-logo--swjtu,
-  .education-card .experience-logo--swjtu { width: 118px; height: 118px; }
+  .education-card .experience-logo--swjtu { width: 108px; height: 108px; }
   .experience-logo--leeds { top: -8px; right: 6px; width: 82px; height: 112px; }
   .education-block { margin-top: 58px; }
   .experience-card h3 { padding-right: 105px; }
