@@ -5,13 +5,12 @@ export function Hero() {
     <section className="hero" id="home">
       <div className="hero-grid container">
         <div className="hero-copy">
-          <p className="hero-greeting">Hi, and welcome to my homepage!</p>
           <h1>
             About Me
           </h1>
           <p className="hero-lead">
-            I am a final-year undergraduate student in Electronic and Electrical Engineering at the SWJTU–Leeds Joint
-            School, where I am advised by{" "}
+            Hi! I’m Jinxin Yang. Welcome to my homepage. I am a final-year undergraduate student in Electronic and
+            Electrical Engineering at the SWJTU–Leeds Joint School, where I am advised by{" "}
             <a href="https://scholar.google.com/citations?user=iv1w1DkAAAAJ&hl=zh-CN" target="_blank" rel="noreferrer">
               Prof. Xiangyi Chen
             </a>
