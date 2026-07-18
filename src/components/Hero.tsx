@@ -5,6 +5,7 @@ export function Hero() {
     <section className="hero" id="home">
       <div className="hero-grid container">
         <div className="hero-copy">
+          <p className="hero-greeting">Hi, and welcome to my homepage!</p>
           <h1>
             About Me
           </h1>
