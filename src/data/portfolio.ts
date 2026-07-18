@@ -60,7 +60,7 @@ export const experiences: Experience[] = [
     period: "October 2024–March 2025",
     location: "Chengdu, China",
     supervisor: "Prof. Xiangyi Chen",
-    researchArea: "Multi-access edge computing, deep reinforcement learning, and AoI-aware network control",
+    researchArea: "Multi-Access Edge Computing, Deep Reinforcement Learning, and AoI-Aware Network Control",
     bullets: [
       "Reviewed multi-access edge computing, deep reinforcement learning, Markov decision processes, and Lyapunov optimization, focusing on AoI-aware scheduling and offloading.",
       "Built MATLAB simulation frameworks for task offloading and resource allocation and reproduced important baselines from recent research.",
