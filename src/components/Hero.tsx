@@ -6,7 +6,7 @@ export function Hero() {
       <div className="hero-grid container">
         <div className="hero-copy">
           <h1>
-            Jinxin Yang
+            About Me
           </h1>
           <p className="hero-lead">
             I am a final-year undergraduate student in Electronic and Electrical Engineering at the SWJTU–Leeds Joint

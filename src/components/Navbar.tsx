@@ -31,6 +31,14 @@ export function Navbar({ currentPath, onNavigate }: Props) {
   return (
     <header className={`navbar ${scrolled ? "navbar--scrolled" : ""}`}>
       <div className="nav-inner">
+        <a
+          className="nav-brand"
+          href="/"
+          onClick={(event) => handleNavigation(event, "/")}
+          aria-label="Jinxin Yang — Home"
+        >
+          Jinxin Yang
+        </a>
         <nav className="desktop-nav" aria-label="Main navigation">
           {navItems.map((item) => (
             <a
