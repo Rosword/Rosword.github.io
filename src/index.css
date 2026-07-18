@@ -114,12 +114,12 @@ button { font: inherit; }
   grid-column: 2;
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 44px;
 }
 
 .desktop-nav a {
   color: var(--muted);
-  font-size: 0.92rem;
+  font-size: 1.02rem;
 }
 
 .desktop-nav a:hover,
@@ -375,7 +375,7 @@ button { font: inherit; }
     background: var(--surface);
     border-bottom: 1px solid var(--line);
   }
-  .mobile-nav a { padding: 8px; color: var(--muted); font-size: 0.75rem; text-align: center; }
+  .mobile-nav a { padding: 8px; color: var(--muted); font-size: 0.82rem; text-align: center; }
   .mobile-nav a.active { color: var(--ink); }
 }
 
