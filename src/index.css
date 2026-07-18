@@ -112,14 +112,18 @@ button { font: inherit; }
 
 .desktop-nav {
   grid-column: 2;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 142px);
   align-items: center;
-  gap: 64px;
+  gap: 28px;
 }
 
 .desktop-nav a {
+  display: block;
   color: var(--muted);
   font-size: 1.12rem;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .desktop-nav a:hover,
