@@ -1,40 +1,52 @@
-import { MapPin } from "lucide-react";
 import { experiences } from "../data/portfolio";
 import { SectionHeading } from "./SectionHeading";
+
+function institutionMark(institution: string) {
+  if (institution.includes("Irvine")) return "UCI";
+  if (institution.includes("Santa Cruz")) return "UCSC";
+  return "SWJTU";
+}
 
 export function ResearchExperience() {
   return (
     <section className="section" id="experience">
       <div className="container">
         <SectionHeading
-          eyebrow="03 / Experience"
-          title="Research across communications, networks, and embedded systems."
+          eyebrow="02 / Experience"
+          title="Research Experience"
         />
-        <div className="timeline">
+        <div className="experience-list">
           {experiences.map((item) => (
-            <article className="timeline-item" key={`${item.institution}-${item.role}`}>
-              <div className="timeline-marker" aria-hidden="true" />
-              <div className="timeline-meta">
-                <time>{item.period}</time>
-                <span><MapPin size={14} /> {item.location}</span>
+            <article className="experience-card" key={`${item.institution}-${item.role}`}>
+              <span className="experience-mark" aria-hidden="true">
+                {institutionMark(item.institution)}
+              </span>
+              <div className="experience-heading">
+                <h3>{item.institution}</h3>
+                {item.ongoing && <span className="ongoing-badge">Ongoing</span>}
               </div>
-              <div className="timeline-content">
-                <div className="institution-row">
-                  <h3>{item.institution}</h3>
-                  {item.ongoing && <span className="ongoing-badge">Ongoing</span>}
+              <p className="experience-meta">
+                <time>{item.period}</time>
+                <span aria-hidden="true">·</span>
+                <span>{item.role}</span>
+              </p>
+              <div className="experience-facts">
+                <p><strong>Research Area:</strong> {item.researchArea}</p>
+                {item.project && <p><strong>Project:</strong> {item.project}</p>}
+                <p><strong>Supervisor:</strong> {item.supervisor}</p>
+                <p><strong>Location:</strong> {item.location}</p>
+              </div>
+              {item.tags && (
+                <div className="tag-row" aria-label="Research methods and technologies">
+                  {item.tags.map((tag) => <span key={tag}>{tag}</span>)}
                 </div>
-                <p className="role">{item.role}</p>
-                {item.project && <h4>{item.project}</h4>}
-                <p className="supervisor">Supervisor: {item.supervisor}</p>
+              )}
+              <details className="experience-details">
+                <summary>Selected contributions</summary>
                 <ul>
                   {item.bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}
                 </ul>
-                {item.tags && (
-                  <div className="tag-row">
-                    {item.tags.map((tag) => <span key={tag}>{tag}</span>)}
-                  </div>
-                )}
-              </div>
+              </details>
             </article>
           ))}
         </div>

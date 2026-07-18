@@ -6,7 +6,7 @@ export function Publications() {
     <section className="section" id="publications">
       <div className="container">
         <SectionHeading
-          eyebrow="05 / Publications & patents"
+          eyebrow="04 / Publications & patents"
           title="Research outputs."
           intro="Peer-reviewed work and intellectual property in timely communications and edge computing."
         />

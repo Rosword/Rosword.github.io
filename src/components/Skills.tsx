@@ -6,7 +6,7 @@ export function Skills() {
     <section className="section section--tinted" id="skills">
       <div className="container">
         <SectionHeading
-          eyebrow="08 / Technical toolkit"
+          eyebrow="07 / Technical toolkit"
           title="Methods and technologies."
           intro="A research toolkit spanning mathematical modeling, network systems, machine learning, and embedded implementation."
         />

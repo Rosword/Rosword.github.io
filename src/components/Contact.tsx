@@ -5,7 +5,7 @@ export function Contact() {
     <section className="contact-section" id="contact">
       <div className="container contact-grid">
         <div>
-          <span className="eyebrow">09 / Contact</span>
+          <span className="eyebrow">08 / Contact</span>
           <h2>Let’s explore what future networks can do.</h2>
           <p>
             I am open to research collaborations, graduate-study opportunities, and technical discussions related to

@@ -5,7 +5,7 @@ export function Education() {
   return (
     <section className="section section--tinted" aria-labelledby="education-title">
       <div className="container">
-        <SectionHeading eyebrow="06 / Education" title="A foundation across theory and systems." />
+        <SectionHeading eyebrow="05 / Education" title="A foundation across theory and systems." />
         <article className="education-card">
           <div className="education-icon"><GraduationCap size={28} /></div>
           <div>

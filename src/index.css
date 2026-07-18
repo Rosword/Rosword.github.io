@@ -289,57 +289,92 @@ button { font: inherit; }
 .fact-panel dt { color: var(--muted); font-size: 0.7rem; }
 .fact-panel dd { margin: 0; font-size: 0.78rem; font-weight: 500; }
 
-.interest-grid {
+.experience-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0 38px;
+  gap: 20px;
+}
+
+.experience-card {
+  position: relative;
+  overflow: hidden;
+  padding: 30px 34px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--surface);
+}
+
+.experience-mark {
+  position: absolute;
+  top: 5px;
+  right: 18px;
+  color: color-mix(in srgb, var(--accent) 16%, transparent);
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.08em;
+  pointer-events: none;
+}
+
+.experience-heading {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-right: 110px;
+}
+
+.experience-heading h3 {
+  margin: 0;
+  font-size: 1.38rem;
+  font-weight: 500;
+}
+
+.ongoing-badge { color: var(--accent); font-size: 0.62rem; font-weight: 700; text-transform: uppercase; }
+
+.experience-meta {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.experience-facts {
+  position: relative;
+  max-width: 760px;
+  margin-top: 24px;
+}
+
+.experience-facts p {
+  margin: 4px 0;
+  font-size: 0.86rem;
+}
+
+.experience-facts strong { font-weight: 600; }
+
+.experience-details {
+  position: relative;
+  margin-top: 18px;
   border-top: 1px solid var(--line);
 }
 
-.interest-card {
-  position: relative;
-  display: grid;
-  grid-template-columns: 30px 1fr;
-  column-gap: 14px;
-  padding: 22px 0;
-  border-bottom: 1px solid var(--line);
-}
-
-.interest-card .card-index { color: var(--muted); font-size: 0.65rem; }
-.interest-card .card-icon { display: none; }
-.interest-card h3 { grid-column: 2; margin: -24px 0 4px; font-size: 0.98rem; font-weight: 600; }
-.interest-card p { grid-column: 2; margin: 0; color: var(--muted); font-size: 0.8rem; }
-
-.timeline { border-top: 1px solid var(--line); }
-
-.timeline-item {
-  display: grid;
-  grid-template-columns: 170px 1fr;
-  gap: 36px;
-  padding: 32px 0;
-  border-bottom: 1px solid var(--line);
-}
-
-.timeline-marker { display: none; }
-
-.timeline-meta {
-  display: flex;
-  flex-direction: column;
+.experience-details summary {
+  width: max-content;
+  padding-top: 12px;
   color: var(--muted);
-  font-size: 0.7rem;
+  font-size: 0.72rem;
+  cursor: pointer;
 }
 
-.timeline-meta time { color: var(--ink); font-weight: 600; }
-.timeline-meta span { display: flex; gap: 5px; margin-top: 5px; }
+.experience-details ul {
+  margin: 13px 0 0;
+  padding-left: 18px;
+  font-size: 0.8rem;
+}
 
-.institution-row { display: flex; align-items: center; gap: 12px; }
-.timeline-content h3 { margin: 0; font-size: 1.05rem; font-weight: 600; }
-.ongoing-badge { color: var(--accent); font-size: 0.62rem; font-weight: 700; text-transform: uppercase; }
-.role { margin: 3px 0 0; color: var(--accent); font-size: 0.77rem; font-weight: 600; }
-.timeline-content h4 { margin: 16px 0 0; font-size: 0.88rem; }
-.supervisor { margin: 5px 0 0; color: var(--muted); font-size: 0.74rem; }
-.timeline-content ul { margin: 14px 0 0; padding-left: 17px; font-size: 0.82rem; }
-.timeline-content li { margin-bottom: 6px; }
+.experience-details li { margin-bottom: 6px; }
 
 .tag-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
 .tag-row span { color: var(--muted); font-size: 0.67rem; }
@@ -484,11 +519,11 @@ button { font: inherit; }
   .hero-aside { padding: 22px 0 0; border-top: 1px solid var(--line); border-left: 0; }
   .about-grid,
   .contact-grid { grid-template-columns: 1fr; gap: 42px; }
-  .interest-grid,
   .skills-grid,
   .award-grid { grid-template-columns: 1fr; }
-  .timeline-item { grid-template-columns: 1fr; gap: 13px; }
-  .timeline-meta { flex-direction: row; flex-wrap: wrap; gap: 14px; }
+  .experience-card { padding: 25px 22px; }
+  .experience-mark { right: 10px; font-size: 3.2rem; }
+  .experience-heading { padding-right: 80px; }
   .featured-card,
   .featured-card--primary { grid-template-columns: 38px 1fr; }
   .aoi-diagram { grid-column: 1 / -1; padding-left: 58px; }
@@ -502,7 +537,7 @@ button { font: inherit; }
   .mobile-nav { grid-template-columns: repeat(2, 1fr); }
   .hero-actions { display: grid; grid-template-columns: 1fr 1fr; }
   .button--text { grid-column: 1 / -1; }
-  .institution-row { align-items: flex-start; flex-direction: column; gap: 4px; }
+  .experience-heading { align-items: flex-start; flex-direction: column; gap: 4px; }
   .aoi-diagram { padding-left: 0; flex-wrap: wrap; }
   .footer-inner { padding: 18px 0; flex-direction: column; text-align: center; }
 }

@@ -1,7 +1,6 @@
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
 import { About } from "./components/About";
-import { ResearchInterests } from "./components/ResearchInterests";
 import { ResearchExperience } from "./components/ResearchExperience";
 import { FeaturedResearch } from "./components/FeaturedResearch";
 import { Publications } from "./components/Publications";
@@ -19,7 +18,6 @@ export default function App() {
       <main id="main-content">
         <Hero />
         <About />
-        <ResearchInterests />
         <ResearchExperience />
         <FeaturedResearch />
         <Publications />

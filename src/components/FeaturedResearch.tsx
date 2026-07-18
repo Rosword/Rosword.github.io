@@ -15,11 +15,11 @@ function AoiDiagram() {
 
 export function FeaturedResearch() {
   return (
-    <section className="section section--dark" aria-labelledby="featured-title">
+    <section className="section section--dark" id="research" aria-labelledby="featured-title">
       <div className="container">
         <SectionHeading
-          eyebrow="04 / Featured research"
-          title="Questions I’m working to answer."
+          eyebrow="03 / Featured research"
+          title="Questions I'm working to answer."
           intro="From the freshness of a single update to the architecture of distributed intelligence."
         />
         <div className="featured-grid">

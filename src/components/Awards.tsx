@@ -11,7 +11,7 @@ export function Awards() {
   return (
     <section className="section" id="awards">
       <div className="container">
-        <SectionHeading eyebrow="07 / Honors" title="Recognition for academic and technical work." />
+        <SectionHeading eyebrow="06 / Honors" title="Recognition for academic and technical work." />
         <div className="award-grid">
           {awards.map((award) => (
             <article className="award-item" key={award.title}>

@@ -67,14 +67,11 @@ Unfilled social links are intentionally shown as disabled labels so the site nev
 
 The main repeatable content lives in `src/data/portfolio.ts`. Section-specific narrative content is stored in the matching component under `src/components/`.
 
-The downloadable CV is stored at `public/Jinxin_Yang_CV.pdf`.
-
 ## Project structure
 
 ```text
 .github/workflows/deploy.yml
 public/
-  Jinxin_Yang_CV.pdf
   favicon.svg
 src/
   components/

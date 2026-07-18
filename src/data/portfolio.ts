@@ -1,21 +1,11 @@
-import type { LucideIcon } from "lucide-react";
-import {
-  Activity,
-  BrainCircuit,
-  Clock3,
-  CloudCog,
-  Cpu,
-  Network,
-} from "lucide-react";
-
 export type NavItem = { label: string; href: string };
-export type ResearchInterest = { title: string; description: string; icon: LucideIcon };
 export type Experience = {
   institution: string;
   role: string;
   period: string;
   location: string;
   supervisor: string;
+  researchArea: string;
   project?: string;
   bullets: string[];
   tags?: string[];
@@ -34,39 +24,6 @@ export const navItems: NavItem[] = [
   { label: "Contact", href: "#contact" },
 ];
 
-export const researchInterests: ResearchInterest[] = [
-  {
-    title: "Wireless Communications",
-    description: "Modeling, optimization, and intelligent resource allocation for future wireless systems.",
-    icon: Activity,
-  },
-  {
-    title: "Computer Networks",
-    description: "Reliable networked systems, scheduling, congestion management, and distributed communication.",
-    icon: Network,
-  },
-  {
-    title: "Graph Neural Networks",
-    description: "Learning representations of graph-structured communication and network systems.",
-    icon: BrainCircuit,
-  },
-  {
-    title: "Age of Information",
-    description: "Timeliness-aware sampling, scheduling, and status-update optimization.",
-    icon: Clock3,
-  },
-  {
-    title: "Machine Learning for Networks",
-    description: "Reinforcement learning and learning-based optimization for network control.",
-    icon: Cpu,
-  },
-  {
-    title: "AI Infrastructure",
-    description: "Networking for distributed training, inference, data movement, and large-scale AI services.",
-    icon: CloudCog,
-  },
-];
-
 export const experiences: Experience[] = [
   {
     institution: "University of California, Irvine",
@@ -74,6 +31,7 @@ export const experiences: Experience[] = [
     period: "June 2026–Present",
     location: "Irvine, California, USA",
     supervisor: "Prof. Yanning Shen",
+    researchArea: "Semantic wireless communications, real-time remote tracking, and graph-based machine learning",
     bullets: [
       "Semantic wireless communications and real-time remote tracking.",
       "Graph-based machine learning for intelligent communication and networked systems.",
@@ -86,6 +44,7 @@ export const experiences: Experience[] = [
     period: "June 2025–June 2026",
     location: "Santa Cruz, California, USA",
     supervisor: "Prof. Hamid Sadjadpour and Dr. Mohammad Moltafet",
+    researchArea: "Age-of-Information-aware status updating in two-way delay systems",
     project: "Age-of-Information-Aware Status Updating in Two-Way Delay Systems",
     bullets: [
       "Developed stochastic models of sampler–sink status-update systems with random two-way delay and finite buffer sizes, extending them to multi-packet systems.",
@@ -100,6 +59,7 @@ export const experiences: Experience[] = [
     period: "October 2024–March 2025",
     location: "Chengdu, China",
     supervisor: "Prof. Xiangyi Chen",
+    researchArea: "Multi-access edge computing, deep reinforcement learning, and AoI-aware network control",
     bullets: [
       "Reviewed multi-access edge computing, deep reinforcement learning, Markov decision processes, and Lyapunov optimization, focusing on AoI-aware scheduling and offloading.",
       "Built MATLAB simulation frameworks for task offloading and resource allocation and reproduced important baselines from recent research.",
@@ -112,6 +72,7 @@ export const experiences: Experience[] = [
     period: "May 2024–April 2025",
     location: "Chengdu, China",
     supervisor: "Prof. Jiling Guo",
+    researchArea: "Wireless data acquisition and embedded sensor systems",
     bullets: [
       "Co-designed sensor and interface circuits and analyzed motor force characteristics under different operating conditions.",
       "Developed embedded C firmware on STM32 microcontrollers for multi-channel ADC acquisition and Bluetooth transmission.",
