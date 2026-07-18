@@ -33,7 +33,7 @@ export const experiences: Experience[] = [
     period: "June 2026–Present",
     location: "Irvine, California, USA",
     supervisor: "Prof. Yanning Shen",
-    researchArea: "GNN, Machine Learning",
+    researchArea: "Graph Learning for Networked Systems",
     bullets: [
       "Graph-based machine learning for intelligent communication and networked systems.",
     ],
