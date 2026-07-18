@@ -49,7 +49,9 @@ export default function App() {
       <a className="skip-link" href="#main-content">Skip to main content</a>
       <Navbar currentPath={pathname} onNavigate={navigate} />
       <main id="main-content">
-        {pageContent(pathname)}
+        <div className="page-transition" key={pathname}>
+          {pageContent(pathname)}
+        </div>
       </main>
       <Footer />
     </div>
