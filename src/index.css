@@ -333,39 +333,6 @@ button { font: inherit; }
 
 .experience-facts strong { font-weight: 500; }
 
-.section--dark {
-  background: var(--bg);
-  color: var(--ink);
-  border-block: 1px solid var(--line);
-}
-
-.featured-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  border-top: 1px solid var(--line);
-}
-
-.featured-card,
-.featured-card--primary {
-  min-height: auto;
-  display: grid;
-  grid-template-columns: 60px 1fr;
-  gap: 20px;
-  padding: 28px 0;
-  border-bottom: 1px solid var(--line);
-}
-
-.featured-card > svg { color: var(--accent); }
-.featured-number { color: var(--accent); font-size: 0.75rem; }
-.featured-label { margin: 0 0 4px !important; color: var(--muted) !important; font-size: 0.66rem !important; font-weight: 700; text-transform: uppercase; }
-.featured-card h3 { margin: 0; font-size: 1.08rem; font-weight: 600; }
-.featured-card p { max-width: 740px; margin: 8px 0 0; color: var(--muted); font-size: 0.82rem; }
-.aoi-diagram { grid-column: 2; display: flex; align-items: center; gap: 10px; margin-top: 10px; }
-.aoi-diagram > div { display: flex; align-items: center; gap: 5px; }
-.aoi-diagram > div > span { display: grid; place-items: center; width: 26px; height: 26px; border: 1px solid var(--line); font-size: 0.7rem; }
-.aoi-diagram small { color: var(--muted); font-size: 0.65rem; }
-.aoi-diagram > p { display: flex; align-items: center; gap: 4px; margin: 0; color: var(--muted); font-size: 0.62rem; }
-
 .output-list { border-top: 1px solid var(--line); }
 
 .output-card {
@@ -476,9 +443,6 @@ button { font: inherit; }
   .experience-card { min-height: 0; padding: 28px 24px; }
   .experience-mark { right: 10px; font-size: 3.2rem; }
   .experience-card h3 { padding-right: 80px; }
-  .featured-card,
-  .featured-card--primary { grid-template-columns: 38px 1fr; }
-  .aoi-diagram { grid-column: 1 / -1; padding-left: 58px; }
   .education-card { grid-template-columns: 1fr; }
   .education-heading { flex-direction: column; }
   .education-meta { align-items: flex-start; }
@@ -489,7 +453,6 @@ button { font: inherit; }
   .mobile-nav { grid-template-columns: repeat(2, 1fr); }
   .hero-actions { display: grid; grid-template-columns: 1fr 1fr; }
   .button--text { grid-column: 1 / -1; }
-  .aoi-diagram { padding-left: 0; flex-wrap: wrap; }
   .footer-inner { padding: 18px 0; flex-direction: column; text-align: center; }
 }
 

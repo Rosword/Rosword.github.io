@@ -2,7 +2,6 @@ import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
 import { About } from "./components/About";
 import { ResearchExperience } from "./components/ResearchExperience";
-import { FeaturedResearch } from "./components/FeaturedResearch";
 import { Publications } from "./components/Publications";
 import { Education } from "./components/Education";
 import { Awards } from "./components/Awards";
@@ -19,7 +18,6 @@ export default function App() {
         <Hero />
         <About />
         <ResearchExperience />
-        <FeaturedResearch />
         <Publications />
         <Education />
         <Awards />
