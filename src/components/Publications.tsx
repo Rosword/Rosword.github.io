@@ -12,7 +12,7 @@ export function Publications() {
             <p className="venue"><em>IEEE Communications Letters</em>, 2026</p>
           </article>
           <article className="output-card">
-            <div className="output-type"><FileCheck2 size={19} /> Patent application</div>
+            <div className="output-type"><FileCheck2 size={19} /> Patent</div>
             <h3>Energy-Efficient Service Deployment and Delivery Method and System for Edge Computing Networks</h3>
             <p className="authors">
               X. Chen, H. Liu, C. Cheng, Z. Meng, <strong>J. Yang</strong>, Y. Fan, H. Xing, and L. Feng
