@@ -72,7 +72,7 @@ button { font: inherit; }
 .section { padding: 78px 0; }
 
 .page-transition {
-  animation: page-fade-in 800ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: page-fade-in 1200ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 @keyframes page-fade-in {
@@ -114,12 +114,12 @@ button { font: inherit; }
   grid-column: 2;
   display: flex;
   align-items: center;
-  gap: 44px;
+  gap: 64px;
 }
 
 .desktop-nav a {
   color: var(--muted);
-  font-size: 1.02rem;
+  font-size: 1.12rem;
 }
 
 .desktop-nav a:hover,
@@ -164,7 +164,7 @@ button { font: inherit; }
 
 .hero h1 {
   margin: 0;
-  font-size: clamp(2.2rem, 4.6vw, 3.2rem);
+  font-size: clamp(1.55rem, 3.2vw, 2.25rem);
   font-weight: 400;
   line-height: 1;
   letter-spacing: -0.04em;
@@ -375,7 +375,7 @@ button { font: inherit; }
     background: var(--surface);
     border-bottom: 1px solid var(--line);
   }
-  .mobile-nav a { padding: 8px; color: var(--muted); font-size: 0.82rem; text-align: center; }
+  .mobile-nav a { padding: 8px; color: var(--muted); font-size: 0.9rem; text-align: center; }
   .mobile-nav a.active { color: var(--ink); }
 }
 
