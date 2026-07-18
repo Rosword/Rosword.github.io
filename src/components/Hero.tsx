@@ -28,6 +28,10 @@ export function Hero() {
             </a>
             .
           </p>
+          <p className="hero-lead">
+            My research interests include wireless networks, stochastic optimization, and machine learning for
+            networked systems.
+          </p>
           <div className="hero-actions">
             <a
               className="profile-link"
