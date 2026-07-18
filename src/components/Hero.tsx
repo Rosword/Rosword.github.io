@@ -10,10 +10,24 @@ export function Hero() {
           </h1>
           <p className="hero-title">Undergraduate Researcher in Wireless Communications and Networked Systems</p>
           <p className="hero-lead">
-            I am a senior undergraduate student in Electronic and Electrical Engineering at the SWJTU–Leeds Joint
-            School, advised by Prof. Xiangyi Chen. Previously, I was a research intern at UC Santa Cruz, where I
-            worked with Dr. Mohammad Moltafet and Prof. Hamid Sadjadpour. I am currently a research intern at UC
-            Irvine, working with Prof. Yanning Shen.
+            I am a final-year undergraduate student in Electronic and Electrical Engineering at the SWJTU–Leeds Joint
+            School, where I am advised by{" "}
+            <a href="https://scholar.google.com/citations?user=iv1w1DkAAAAJ&hl=zh-CN" target="_blank" rel="noreferrer">
+              Prof. Xiangyi Chen
+            </a>
+            . Previously, I was a research intern at the University of California, Santa Cruz, working with{" "}
+            <a href="https://mohammad-moltafet.github.io/my-website/" target="_blank" rel="noreferrer">
+              Dr. Mohammad Moltafet
+            </a>{" "}
+            and{" "}
+            <a href="https://users.soe.ucsc.edu/~hamid/index.html" target="_blank" rel="noreferrer">
+              Prof. Hamid Sadjadpour
+            </a>
+            . I am currently a research intern at the University of California, Irvine, working with{" "}
+            <a href="https://sites.google.com/uci.edu/yanning-shen/home" target="_blank" rel="noreferrer">
+              Prof. Yanning Shen
+            </a>
+            .
           </p>
           <div className="hero-actions">
             <a className="button button--primary" href="#publications">
