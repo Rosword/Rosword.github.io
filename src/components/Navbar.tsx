@@ -1,7 +1,6 @@
 import { Menu, X } from "lucide-react";
 import { useEffect, useState, type MouseEvent } from "react";
 import { navItems } from "../data/portfolio";
-import { ThemeToggle } from "./ThemeToggle";
 
 type Props = {
   currentPath: string;
@@ -45,7 +44,6 @@ export function Navbar({ currentPath, onNavigate }: Props) {
           ))}
         </nav>
         <div className="nav-actions">
-          <ThemeToggle />
           <button
             className="icon-button menu-button"
             type="button"

@@ -13,18 +13,6 @@
   --font: "Helvetica Neue", Arial, ui-sans-serif, system-ui, sans-serif;
 }
 
-:root[data-theme="dark"] {
-  color-scheme: dark;
-  --bg: #171717;
-  --soft: #202020;
-  --surface: #191919;
-  --ink: #eeeeee;
-  --muted: #aaaaaa;
-  --line: #3a3a3a;
-  --accent: #8ab9df;
-  --nav: rgba(23, 23, 23, 0.94);
-}
-
 * { box-sizing: border-box; }
 
 html {
@@ -275,16 +263,6 @@ button { font: inherit; }
   opacity: 0.13;
 }
 
-:root[data-theme="dark"] .experience-logo {
-  filter: brightness(0) invert(1);
-  opacity: 0.16;
-}
-
-:root[data-theme="dark"] .experience-logo--ucsc {
-  filter: invert(1) grayscale(1);
-  mix-blend-mode: screen;
-}
-
 .experience-card h3 {
   position: relative;
   max-width: 760px;
@@ -351,10 +329,6 @@ button { font: inherit; }
 
 .education-facts p {
   font-size: 1.08rem;
-}
-
-:root[data-theme="dark"] .education-logo {
-  opacity: 0.22;
 }
 
 .output-list { border-top: 1px solid var(--line); }
