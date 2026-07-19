@@ -56,7 +56,7 @@ export const experiences: Experience[] = [
   },
   {
     institution: "Southwest Jiaotong University",
-    role: "Research Assistant",
+    role: "Research Intern",
     period: "October 2024–March 2025",
     location: "Chengdu, China",
     supervisor: "Prof. Xiangyi Chen",
